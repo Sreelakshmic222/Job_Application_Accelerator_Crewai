@@ -1,0 +1,26 @@
+[project]
+name = "job_application_accelerator"
+version = "0.1.0"
+description = "job_application_accelerator using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[litellm,tools]>=1.15.17,<2.0.0",
+    "litellm==1.105.3",
+]
+
+[project.scripts]
+job_application_accelerator = "job_application_accelerator.main:run"
+run_crew = "job_application_accelerator.main:run"
+train = "job_application_accelerator.main:train"
+replay = "job_application_accelerator.main:replay"
+test = "job_application_accelerator.main:test"
+run_with_trigger = "job_application_accelerator.main:run_with_trigger"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
+project_id = "1e3322ed-f979-48a3-84bd-06736f9f8baa"

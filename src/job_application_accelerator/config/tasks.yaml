@@ -1,0 +1,64 @@
+analyze_job_task:
+  description: >
+    Analyze job market trends in {topic}, identify in-demand skills,
+    evaluate job opportunities, and provide actionable career insights.
+
+  expected_output: >
+    A concise report highlighting key job market trends, required skills,
+    salary insights, and career opportunities, supported by reliable sources.
+
+  agent: job_analyst
+
+
+tailor_resume_task:
+  description: >
+    Tailor the candidate's resume to {topic} by aligning skills,
+    experience, and achievements with target job requirements.
+    Optimize keywords for ATS compatibility while maintaining accuracy.
+
+  expected_output: >
+    An ATS-friendly, professionally tailored resume highlighting
+    relevant skills, achievements, and qualifications.
+
+  agent: resume_strategist
+
+
+cover_letter_task:
+  description: >
+    Create a personalized, professional cover letter for {topic},
+    aligning the candidate's skills, experience, and achievements
+    with the target job requirements.
+
+  expected_output: >
+    A compelling, tailored cover letter highlighting relevant
+    qualifications, key achievements, and suitability for the role.
+
+  agent: cover_letter_writer
+
+
+interview_prep_task:
+  description: >
+    Prepare candidates for interviews in {topic} by generating
+    role-specific questions, practicing STAR-based answers, and
+    providing actionable feedback to improve confidence and performance.
+
+  expected_output: >
+    A tailored interview preparation guide with common and technical
+    questions, sample answers, STAR frameworks, and improvement tips.
+
+  agent: interview_coach
+
+
+match_report_task:
+  description: >
+    Evaluate how well the candidate matches the target role in {topic}.
+    Identify skill gaps, missing keywords, resume weaknesses, and
+    inconsistencies. Recommend specific improvements before applying.
+
+  expected_output: >
+    A short Markdown report including match score (%), key strengths,
+    gaps, and actionable fixes, followed by a one-line verdict:
+    Apply Now, Improve First, or Low Match.
+
+  agent: application_critic
+  
